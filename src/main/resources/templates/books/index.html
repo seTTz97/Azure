@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Simple spring boot app</title>
+    <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/pure-min.css"
+          integrity="sha384-4ZPLezkTZTsojWFhpdFembdzFudphhoOzIunR1wH6g1WQDzCAiPvDyitaK67mp0+" crossorigin="anonymous">
+</head>
+<body>
+<center><h1>Book list</h1></center>
+
+<table style="outline-width:3px; outline-color:black;">
+    <tr>
+        <th>Id</th>
+        <th>Title</th>
+    </tr>
+    <tr th:each="book : ${books}">
+        <td th:text = "${book.id}">adasd</td>
+        <td th:text = "${book.title}">dasd</td>
+    </tr>
+</table>
+
+
+</body>
+</html>
