@@ -5,3 +5,4 @@ to deploy app on windows:
 4. insert command "mvnw azure-webapp:deploy"
 5. log in to azure
 6. there you have it, successfully deploy
+7. to see results go to https://<azure app name>azurewebsites.net/books
